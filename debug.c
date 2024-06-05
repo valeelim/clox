@@ -29,8 +29,7 @@ int diassembleInstruction(Chunk* chunk, int offset) {
 
     if (offset > 0 && getLine(chunk, offset) == getLine(chunk, offset - 1)) {
         printf("   | ");
-    }
-    else {
+    } else {
         printf("%4d ", getLine(chunk, offset));
     }
     

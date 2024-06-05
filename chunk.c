@@ -43,8 +43,7 @@ void writeChunk(Chunk* chunk, uint8_t byte, int line) {
         chunk->lineCount++;
         chunk->lines[chunk->lineCount].line = line;
         chunk->lines[chunk->lineCount].runLength = 1;
-    }
-    else {
+    } else {
         chunk->lines[chunk->lineCount].runLength++;
     }
 }
