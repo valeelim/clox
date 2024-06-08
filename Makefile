@@ -27,7 +27,7 @@ $(BUILD_DIR)/$(NAME)/%.o: $(SOURCE_DIR)/%.c $(HEADERS)
 	@ time $(CC) -c $(C_LANG) $(CFLAGS) -o $@ $<
 
 run: $(NAME)
-	@ ./$(NAME)
+	@ ./$(NAME) lox
 
 clean:
 	@ rm -rf build/
