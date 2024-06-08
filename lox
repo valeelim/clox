@@ -1,5 +1,8 @@
-{
-    var a = 1;
-    var b = 2;
-    print a * b;
+var a = 6;
+if (a == 5) {
+    print "a is five";
 }
+else {
+    print "a is not five";
+}
+print "u've reached the end";
