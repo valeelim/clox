@@ -1,9 +1,19 @@
-var x = "global";
-fun outer() {
-  var x = "outer";
-  fun inner() {
-    print x;
+var kek;
+fun aa() {
+  var a = 5;
+  fun b() {
+    fun c() {
+      a = 1;
+    }
+    c();
+    print a;
   }
-  inner();
+  kek = b;
+  print a;
+  return b;
 }
-outer();
+
+var lmao = aa();
+kek();
+lmao();
+
